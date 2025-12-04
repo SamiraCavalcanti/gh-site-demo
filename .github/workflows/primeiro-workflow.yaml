@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Nome do job
 name: Primeiro Workflow, Hello World
 
@@ -10,17 +9,3 @@ jobs:
     steps:
       - name: Exibir mensagem de Hello World
         run: echo "Hello, World!"
-=======
-# Nome do workflow
-name: Hello World
-on:
-  workflow_dispatch:
-jobs:
-  # Nome do job
-  hello-world:
-    # Definição do SO que vai executar o job
-    runs-on: ubuntu-latest
-    steps:
-      - name: Print Hello World
-        run: echo "Hello, World!"
->>>>>>> 0e45051 (adicionando dependencia entre jobs)
