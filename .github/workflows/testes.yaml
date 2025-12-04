@@ -13,3 +13,17 @@ jobs:
 
       - name: Run tests
         run: npm test
+
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Build  Application
+        run: echo "Build app..." 
+
+      - name: Deploy to stage
+        run: echo "Deploying to stage ..."
+        
